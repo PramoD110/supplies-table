@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chemical Supplies Table</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Chemical Supplies</h1>
+      <div class="toolbar">
+        <button id="add-row"><img src="icons/plus-solid.svg" alt="Add Row" class="icon"></button>
+        <button id="move-up"><img src="icons/arrow-up-solid.svg" alt="Move up" class="icon"></button>
+        <button id="move-down"><img src="icons/arrow-down-solid.svg" alt="Move down" class="icon"></button>
+        <button id="save-data"><img src="icons/floppy-disk-solid.svg" alt="Save" class="icon"></button>
+        <button id="refresh-data"><img src="icons/rotate-right-solid.svg" alt="Refresh" class="icon"></button>
+        <button id="delete-row"><img src="icons/trash-solid.svg" alt="Delete" class="icon"></button>
+      </div>
+      <table id="chemical-table">
+        <thead>
+          <tr>
+            <th>ID<span onclick="sortTable(1)" class="sort-icon">▲▼</span></th>
+            <th>Chemical Name <span onclick="sortTable(1)" class="sort-icon">▲▼</span></th>
+            <th>Vendor <span onclick="sortTable(2)" class="sort-icon">▲▼</span></th>
+            <th>Density (g/m³) <span onclick="sortTable(3)" class="sort-icon">▲▼</span></th>
+            <th>Viscosity (m²/s) <span onclick="sortTable(4)" class="sort-icon">▲▼</span></th>
+            <th>Packaging <span onclick="sortTable(5)" class="sort-icon">▲▼</span></th>
+            <th>Pack Size <span onclick="sortTable(6)" class="sort-icon">▲▼</span></th>
+            <th>Unit <span onclick="sortTable(7)" class="sort-icon">▲▼</span></th>
+            <th>Quantity <span onclick="sortTable(8)" class="sort-icon">▲▼</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
